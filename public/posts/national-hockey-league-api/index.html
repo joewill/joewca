@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<title>National Hockey League API &middot; Joe Williams</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Joe Williams">
+	<meta name="description" content="Developer | Ottawa">
+	<meta name="keywords" content="developer, ottawa">
+	<meta name="generator" content="Hugo 0.55.6" />
+
+	<meta property="og:title" content="National Hockey League API" />
+<meta property="og:description" content="As a developer, and a hockey fan. I spend a lot of time thinking about how to combine two things I love. Recently I had a cool NHL related app idea I&rsquo;d like to turn into a Progressive Web App. The first step was finding a way to get the NHL related data I needed for the app. I needed an API.
+If you do a quick web search for an NHL API, you&rsquo;ll likely find a few random Reddit threads linking to abandoned Github projects." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://joew.ca/posts/national-hockey-league-api/" />
+<meta property="article:published_time" content="2017-10-09T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-10-09T00:00:00&#43;00:00"/><meta property="og:site_name" content="Type theme" />
+
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://joew.ca/css/main.css">
+
+	<!--Favicon-->
+	<link rel="apple-touch-icon" href="https://joew.ca/apple-touch-icon.png">
+	<link rel="shortcut icon" href="https://joew.ca/favicon.ico" type="image/x-icon">
+
+	
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/solid.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/brands.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/fontawesome.min.css">
+
+	<!-- Google Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header class="site-header">
+	<div class="branding">
+		<h1 class="site-title">
+			<a href="https://joew.ca/">Joe Williams</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+
+
+		</ul>
+	</nav>
+</header>
+
+	<div class="content">
+	<article>
+		<header>
+			<h1 class="title">National Hockey League API</h1>
+			<p class="meta">
+	October 9, 2017
+
+	
+</p>
+		</header>
+
+		<section class="post-content">
+			<p>As a developer, and a hockey fan. I spend a lot of time thinking about how to combine two things I love. Recently I had a cool NHL related app idea I&rsquo;d like to turn into a <a href="https://en.wikipedia.org/wiki/Progressive_web_app">Progressive Web App</a>. The first step was finding a way to get the NHL related data I needed for the app. I needed an API.</p>
+
+<p>If you do a quick web search for an NHL API, you&rsquo;ll likely find a few random Reddit threads linking to abandoned Github projects. Or you&rsquo;ll find a few companies out there that are willing to provide stats, for a fee. Usually a fee that&rsquo;s outside of the budget for a hobby app (read: free).</p>
+
+<p>If you keep digging you may come across reference to an official NHL API. This API has all the information you&rsquo;d expect, is free, and is totally legit. The big drawback is that it&rsquo;s undocumented. You have to guess what the endpoints are to find your information.</p>
+
+<p>Luckily there is some information out there. One blog post by <a href="https://www.kevinsidwar.com/iot/2017/7/1/the-undocumented-nhl-stats-api">Kevin Sidwar</a> was particularly helpful: <a href="https://www.kevinsidwar.com/iot/2017/7/1/the-undocumented-nhl-stats-api">The Undocumented NHL Stats API</a>.</p>
+
+<p>Here, Kevin has laid out some of the useful endpoints he&rsquo;s discovered. Things like how to find Teams, Players and even live game stats. I believe he&rsquo;s even been in contact with the team behind the API. From what I understand they know they&rsquo;d like to document the API, but haven&rsquo;t got to it yet.</p>
+
+<p>Kevin&rsquo;s project (<a href="https://www.youtube.com/watch?v=9eprFg7XjTQ">which you should check out here</a>) involves player stats. Where my project will be more focused on the Teams, their upcoming games, and the outcome of those games. For this I&rsquo;ll likely rely on the <strong>schedule</strong> endpoint.</p>
+
+<p>The base URL of the API is <a href="https://statsapi.web.nhl.com/api/v1">https://statsapi.web.nhl.com/api/v1</a>. If you hit the &lsquo;schedule&rsquo; endpoint you&rsquo;ll get a list of the games for today: <a href="https://statsapi.web.nhl.com/api/v1/schedule">https://statsapi.web.nhl.com/api/v1/schedule</a>.</p>
+
+<p>If you&rsquo;re interested in getting more games you can also include a start and an end date. This link will provide you a schedule off all the games for the first week of the season: <a href="https://statsapi.web.nhl.com/api/v1/schedule?startDate=2017-10-04&amp;endDate=2017-10-11">https://statsapi.web.nhl.com/api/v1/schedule?startDate=2017-10-04&amp;endDate=2017-10-11</a>.</p>
+
+<p>Another really useful endpoint I came across was the <strong>standings</strong> endpoint. Hit <a href="https://statsapi.web.nhl.com/api/v1/standings">https://statsapi.web.nhl.com/api/v1/standings</a>, and you&rsquo;ll get a nice set of data describing the current season&rsquo;s standings. Likely a super useful endpoint if you&rsquo;re building a sports app.</p>
+
+<p>One thing you may notice if you consume the API in your browser, is that the favicon is the <a href="https://www.mlb.com/">Major League Baseball</a> logo. This is because the NHL works with <a href="https://en.wikipedia.org/wiki/MLB_Advanced_Media">MLB Advanced Media (MLBAM)</a> to provide it&rsquo;s digital services.</p>
+
+<p>I couldn&rsquo;t be more happy to discover this API. A lot of doubts about my project have cleared. Big thanks to Kevin for his work discovering those endpoints. I&rsquo;m hoping the NHL API can help with more cool hockey related projects.</p>
+
+<p>I&rsquo;ll write more about my new project soon.</p>
+
+<p>Joe</p>
+
+
+			
+
+			<hr>
+			
+
+<h3>See also</h3>
+<ul>
+	
+	<li><a href="/posts/things-you-might-not-know-about-python/">Things You Might Not Know About Python</a></li>
+	
+	<li><a href="/posts/arrow-functions-what-is-this/">Arrow Functions: What is this?</a></li>
+	
+	<li><a href="/posts/ghost-on-node-on-bash-on-ubuntu-on-windows/">Ghost on Node on Bash on Ubuntu on Windows</a></li>
+	
+	<li><a href="/posts/filling-in-the-gaps-c-access-modifier/">Filling in the Gaps: C# Access Modifier</a></li>
+	
+	<li><a href="/posts/working-remote/">Working Remote</a></li>
+	
+</ul>
+
+		</section>
+	</article>
+	</div>
+
+	<footer class="site-footer">
+	<ul class="icons">
+		<li class="icon">
+	<a href="https://joew.ca/" title="">
+		<i class="fas fa-fw fa-home"></i>
+	</a>
+</li>
+
+<li class="icon">
+	<a href="https://joew.ca/index.xml" title="Subcribe">
+		<i class="fas fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="icon">
+	<a href="https://github.com/joewill" rel="me" title="GitHub">
+		<i class="fab fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="icon">
+	<a href="https://twitter.com/ohwoey" rel="me" title="Twitter">
+		<i class="fab fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+	</ul>
+
+	<p class="text">&copy; 2019 -
+		Released under the MIT license<br>Powered by <a href="https://gohugo.io/">Hugo</a> with the <a href="https://github.com/digitalcraftsman/hugo-type-theme">Type Theme</a>
+	</p>
+</footer>
+</body>
+</html>

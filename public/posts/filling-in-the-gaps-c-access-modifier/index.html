@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<title>Filling in the Gaps: C# Access Modifier &middot; Joe Williams</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Joe Williams">
+	<meta name="description" content="Developer | Ottawa">
+	<meta name="keywords" content="developer, ottawa">
+	<meta name="generator" content="Hugo 0.55.6" />
+
+	<meta property="og:title" content="Filling in the Gaps: C# Access Modifier" />
+<meta property="og:description" content="Every year I get an education allowance through work. Every year I feel like I don&rsquo;t take full advantage of it. This year I choose to spend a portion of my allowance on a PluralSight subscription.
+I&rsquo;ve been a professional developer now for 11 years. That&rsquo;s a long time. You might think I know my tools inside and out by now. I would say I&rsquo;m very productive, but I don&rsquo;t know everything." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://joew.ca/posts/filling-in-the-gaps-c-access-modifier/" />
+<meta property="article:published_time" content="2017-01-21T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-01-21T00:00:00&#43;00:00"/><meta property="og:site_name" content="Type theme" />
+
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://joew.ca/css/main.css">
+
+	<!--Favicon-->
+	<link rel="apple-touch-icon" href="https://joew.ca/apple-touch-icon.png">
+	<link rel="shortcut icon" href="https://joew.ca/favicon.ico" type="image/x-icon">
+
+	
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/solid.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/brands.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/fontawesome.min.css">
+
+	<!-- Google Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header class="site-header">
+	<div class="branding">
+		<h1 class="site-title">
+			<a href="https://joew.ca/">Joe Williams</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+
+
+		</ul>
+	</nav>
+</header>
+
+	<div class="content">
+	<article>
+		<header>
+			<h1 class="title">Filling in the Gaps: C# Access Modifier</h1>
+			<p class="meta">
+	January 21, 2017
+
+	
+</p>
+		</header>
+
+		<section class="post-content">
+			<p>Every year I get an education allowance through work. Every year I feel like I don&rsquo;t take full advantage of it. This year I choose to spend a portion of my allowance on a <a href="https://www.pluralsight.com/">PluralSight</a> subscription.</p>
+
+<p>I&rsquo;ve been a professional developer now for 11 years. That&rsquo;s a long time. You might think I know my tools inside and out by now. I would say I&rsquo;m very productive, but I don&rsquo;t know everything.</p>
+
+<p>Getting back to PluralSight. They have a feature called &ldquo;Paths&rdquo;. PluralSight offers video course training on many topics. Paths is a feature that guides you through a Topic from A to B. They direct the learner through a topic from Beginner to Advanced. Stringing together video courses that teach the learner along the way.</p>
+
+<p>Before you get started on a Path you do a quick 5 minute test. I took two. One for C#, the other for Javascript. These are the programming languages I&rsquo;m most interested in mastering.</p>
+
+<p>While I did very well in the Javascript test, I did not do so well in the C# test. This was surprising to me as I feel my C# skills are higher than my Javascript skills. Needless to say, I was a bit humbled.</p>
+
+<p>I took this as a sign to buckle down and fill in the C# gaps. By &ldquo;gaps&rdquo; I mean knowledge gaps. The things I thought I understood but didn&rsquo;t. I started down the C# &ldquo;Path&rdquo;.</p>
+
+<p>I&rsquo;ll give an example of one such &ldquo;gap&rdquo;. That is the <code>Access Modifier</code>. Now I&rsquo;ve been using these for years, but had no idea what they were called. It&rsquo;s not terminology we use around the office.</p>
+
+<p>So what is an Access Modifier? Consider the below C# code:</p>
+
+<pre><code>public string Greeting(){
+  return &quot;Hi!&quot;;
+}
+
+private string Greeting(){
+  return &quot;No soup for you!&quot;;
+}
+</code></pre>
+
+<p>Notice the difference between those two functions? The private/public keywords. Those are Access Modifiers. If you had asked me a couple of days ago I don&rsquo;t know if I could have told you what the actual name was. I would have likely said they&rsquo;re part of the function signature.</p>
+
+<p>So what do they do? <code>Private</code> limits the function to the enclosing class. You cannot call this function from code outside the class the function is defined in. <code>Public</code> allows the function to be called from code outside the class.</p>
+
+<p>These aren&rsquo;t the only two Access Modifiers. There are others such as <code>protected</code> and <code>internal</code>. If you&rsquo;re curious what these do I would head to the <a href="https://msdn.microsoft.com/en-us/library/wxh6fsc7.aspx">official documentation</a>.</p>
+
+<p>I recognize this isn&rsquo;t a great example of something that&rsquo;s going to make me more productive using C#. But it&rsquo;s an example of one of those things I know now, that I didn&rsquo;t before. That&rsquo;s called learning. Something I&rsquo;m excited to do more of.</p>
+
+<p>Joe</p>
+
+
+			
+
+			<hr>
+			
+
+<h3>See also</h3>
+<ul>
+	
+	<li><a href="/posts/working-remote/">Working Remote</a></li>
+	
+	<li><a href="/posts/getting-started-with-net-core/">Getting Started with ASP.Net Core</a></li>
+	
+</ul>
+
+		</section>
+	</article>
+	</div>
+
+	<footer class="site-footer">
+	<ul class="icons">
+		<li class="icon">
+	<a href="https://joew.ca/" title="">
+		<i class="fas fa-fw fa-home"></i>
+	</a>
+</li>
+
+<li class="icon">
+	<a href="https://joew.ca/index.xml" title="Subcribe">
+		<i class="fas fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="icon">
+	<a href="https://github.com/joewill" rel="me" title="GitHub">
+		<i class="fab fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="icon">
+	<a href="https://twitter.com/ohwoey" rel="me" title="Twitter">
+		<i class="fab fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+	</ul>
+
+	<p class="text">&copy; 2019 -
+		Released under the MIT license<br>Powered by <a href="https://gohugo.io/">Hugo</a> with the <a href="https://github.com/digitalcraftsman/hugo-type-theme">Type Theme</a>
+	</p>
+</footer>
+</body>
+</html>

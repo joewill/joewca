@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Joe Williams</title>
+    <link>https://joew.ca/</link>
+    <description>Recent content on Joe Williams</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://joew.ca/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>National Hockey League API</title>
+      <link>https://joew.ca/posts/national-hockey-league-api/</link>
+      <pubDate>Mon, 09 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://joew.ca/posts/national-hockey-league-api/</guid>
+      <description>As a developer, and a hockey fan. I spend a lot of time thinking about how to combine two things I love. Recently I had a cool NHL related app idea I&amp;rsquo;d like to turn into a Progressive Web App. The first step was finding a way to get the NHL related data I needed for the app. I needed an API.
+If you do a quick web search for an NHL API, you&amp;rsquo;ll likely find a few random Reddit threads linking to abandoned Github projects.</description>
+    </item>
+    
+    <item>
+      <title>Things You Might Not Know About Python</title>
+      <link>https://joew.ca/posts/things-you-might-not-know-about-python/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://joew.ca/posts/things-you-might-not-know-about-python/</guid>
+      <description>A few weeks ago I decided to pick up a new programming language. I&amp;rsquo;ve always sort of had my eye on Python. Until recently I hadn&amp;rsquo;t taken the time to try it out. I&amp;rsquo;m very happy I did. So far it&amp;rsquo;s been a great experience.
+I have to admit, I didn&amp;rsquo;t know a lot about Python going in. So I was surprised by what I&amp;rsquo;ve learned about the language. I thought I&amp;rsquo;d share a few of these things.</description>
+    </item>
+    
+    <item>
+      <title>Arrow Functions: What is this?</title>
+      <link>https://joew.ca/posts/arrow-functions-what-is-this/</link>
+      <pubDate>Sat, 25 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://joew.ca/posts/arrow-functions-what-is-this/</guid>
+      <description>Arrow functions are a newer feature in Javascipt. They are very handy, often creating cleaner, more concise code. They do come with some gotchas. One of these gotchas being how the this keyword is handled.
+Before we get to this. Lets take a quick look at what an arrow function is. Traditionally in Javascript you would define a function like so:
+function oldSchool(){ return &amp;quot;The way we&#39;ve always done it&amp;quot;; }  &amp;hellip;and the arrow function equivalent</description>
+    </item>
+    
+    <item>
+      <title>Ghost on Node on Bash on Ubuntu on Windows</title>
+      <link>https://joew.ca/posts/ghost-on-node-on-bash-on-ubuntu-on-windows/</link>
+      <pubDate>Tue, 31 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://joew.ca/posts/ghost-on-node-on-bash-on-ubuntu-on-windows/</guid>
+      <description>This blog runs on Ghost. So far I&amp;rsquo;m really loving it. It&amp;rsquo;s a blogging platform, pure and simple. Everything you need. Nothing you don&amp;rsquo;t. Ghost is built on Node.js.
+I develop and write on a Windows machine. A Surface Pro 4 to be exact. Windows runs Node.js applications pretty well on it&amp;rsquo;s own. But with the release of Bash on Ubuntu on Windows, I also have the ability to run Node.</description>
+    </item>
+    
+    <item>
+      <title>Filling in the Gaps: C# Access Modifier</title>
+      <link>https://joew.ca/posts/filling-in-the-gaps-c-access-modifier/</link>
+      <pubDate>Sat, 21 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://joew.ca/posts/filling-in-the-gaps-c-access-modifier/</guid>
+      <description>Every year I get an education allowance through work. Every year I feel like I don&amp;rsquo;t take full advantage of it. This year I choose to spend a portion of my allowance on a PluralSight subscription.
+I&amp;rsquo;ve been a professional developer now for 11 years. That&amp;rsquo;s a long time. You might think I know my tools inside and out by now. I would say I&amp;rsquo;m very productive, but I don&amp;rsquo;t know everything.</description>
+    </item>
+    
+    <item>
+      <title>Working Remote</title>
+      <link>https://joew.ca/posts/working-remote/</link>
+      <pubDate>Wed, 23 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://joew.ca/posts/working-remote/</guid>
+      <description>I&amp;rsquo;ve been working remote since May 2014. I thought it would be good to publish my experience. For the most part everything has been positive. There are some negatives to address though. My situation, like most, is unique.
+When my wife (girlfriend at the time) and I decided we wanted to move from Alberta to Ottawa, ON I thought I would need to look for a new job. I wasn&amp;rsquo;t happy about this because I do like my job at Tronia Systems Ltd.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with ASP.Net Core</title>
+      <link>https://joew.ca/posts/getting-started-with-net-core/</link>
+      <pubDate>Mon, 14 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://joew.ca/posts/getting-started-with-net-core/</guid>
+      <description>I&amp;rsquo;ve been working with .Net for a 11 years now. First starting out with Winforms VB.Net, moving over to ASP.Net Web Forms. More recently I&amp;rsquo;ve worked with both ASP.Net MVC and stood up a couple REST services with WebAPI. It&amp;rsquo;s safe to say I&amp;rsquo;m comfortable in Visual Studio.
+Recently the Microsoft Team in Redmond have been busy. With the recent release of .Net Core, things are getting pretty exciting in .</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://joew.ca/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://joew.ca/projects/</guid>
+      <description> Coming Soon </description>
+    </item>
+    
+  </channel>
+</rss>
