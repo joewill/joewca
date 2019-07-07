@@ -1,0 +1,9 @@
+<footer class="site-footer">
+	<ul class="icons">
+		{{ partial "icons.html" . }}
+	</ul>
+
+	<p class="text">&copy; {{ now.Format "2006" }} -
+		{{ .Site.Params.copyright | default "Released under the MIT license<br>Powered by [Hugo](https://gohugo.io/) with the [Type Theme (modified)](https://github.com/digitalcraftsman/hugo-type-theme)" | markdownify }}
+	</p>
+</footer>
